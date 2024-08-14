@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pomodoro Timer |</title>
+        <meta name="description" content="A Pomodoro timer still in beta phase to keep you motivated and focused. Customize your pomodoro timer and choose from various themes.">
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon_32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon_16x16.png">
+        <link rel="manifest" href="./favi/site.webmanifest">
+        <link rel="mask-icon" href="./favi/safari-pinned-tab.svg" color="#000000">
+        <link rel="shortcut icon" href="./favi/favicon.ico">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="msapplication-config" content="./favi/browserconfig.xml">
+        <meta name="theme-color" content="#000000">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MC7D8QV87"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-8MC7D8QV87');
+        </script>
+        <script>
+            function myFunction() {
+                let x = document.getElementById("myTextarea").value;
+                let y = x.split("si")[0]
+                let z = y.split("/playlist/")[1]
+        
+                let ifram = `<iframe id="spotify" width="100%" height="80" frameborder="0" allowfullscreen="" data-src="https://open.spotify.com/embed/playlist/${z}theme=0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" src="https://open.spotify.com/embed/playlist/${z}theme=0"></iframe>`
+                             document.getElementById("songImp").innerHTML = ifram;
+                             
+           }
+        </script>
+        <script defer="defer" src="runtimebackup.js"></script>
+        <script defer="defer" src="vendorbackup.js"></script>
+        <script defer="defer" src="backupmainJS.js"></script>
+    </head>
+    <body>
+        <div id="bg-wrapper">
+            <img id="bg-image" data-src="images/cafe.jpg" width="100%" height="100%" src="" style="display: block;">
+            <div id="player"></div>
+        </div>
+        <div id="top">
+            <div id="top-left"></div>
+            <div id="top-right"></div>
+        </div>
+        <div id="bottom">
+            <div id="spotify">
+                <div id = "songImp"></div>
+            </div>
+            <div id="bottom-mid"></div>
+            <div id="bottom-right"></div>
+        </div>
+        <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c0e415e1d3731c4","version":"2023.4.0","r":1,"token":"5552d7b8cf99469c89e11c33ab475e08","si":100}' crossorigin="anonymous"></script>
+        <p1><a href="https://www.instagram.com/smartprep28/"><img src="iglogo.png" height="45"></a></p1>
+        <style>
+            p1 {position:absolute;
+                top: 85px;;
+                right:0;
+                }
+        </style>
+    </body>
+</html>

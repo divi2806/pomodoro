@@ -1,0 +1,10 @@
+for JS edit start 
+from line 86 of mainbackup.js
+use from that to add/remove
+themes , music/alarm
+
+
+for new theme
+line 54 se add id and name
+line 100 add CSS (new theme design)
+line 510 onwards image source
